@@ -12,9 +12,11 @@ Change base_url in database after checkout for your local system
 ## Use
 
 To use with the default filename (local.xml):
+
     php bin/magento setup:environment
 
 If you choose a custom name for the config file:
+
     php bin/magento setup:environment -f | --file "customfilename.xml"
 
 ## Backend
