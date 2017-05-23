@@ -22,5 +22,5 @@ If you choose a custom name for the config file:
 ## Backend
 
 To see the content of the parameters go to your magento2 adminpage 
-Klick on CNX and then on Environment.
+Goto CNX / Environment.
 
