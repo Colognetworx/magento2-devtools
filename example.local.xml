@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * Copyright © Colognetworx cnx GmbH
+ * Use this configuration file to update your local magento2 instance to the local 
+ * web server and enable mailhog
+ */
+-->
+<config>
+    <parameter name="web/unsecure/base_url" value="http://localhost/magento2" />
+    <parameter name="web/secure/base_url" value="https://localhost/magento2" />
+</config>
