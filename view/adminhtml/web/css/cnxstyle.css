@@ -1,0 +1,22 @@
+.cnxlable {
+	width: 35%;
+	display: table;
+	float: left;
+}
+
+.cnxvalue {
+	width: 65%;
+	display: table;
+	float: left;
+}
+
+@media screen and (max-width: 800px) {
+    .cnxlable {
+		width: 100%;
+	}
+
+	.cnxvalue {
+		width: 100%;
+		padding-bottom: 20px;
+	}
+}

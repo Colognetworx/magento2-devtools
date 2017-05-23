@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Backend:etc/menu.xsd">
+    <menu>
+        <add id="Cnx_Developer::developer"
+			title="CNX"
+			module="Cnx_Developer"
+			sortOrder="200"
+			resource="Cnx_Developer::developer" />
+		<add id="Cnx_Developer::setupenvironment" 
+			title="Environment" 
+			module="Cnx_Developer" 
+			sortOrder="10" 
+			action="cnxdeveloper/setupenvironment" 
+			resource="Cnx_Developer::setupenvironment" 
+			parent="Cnx_Developer::developer"/>
+    </menu>
+</config>

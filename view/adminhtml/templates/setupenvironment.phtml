@@ -1,0 +1,22 @@
+<h2>
+	<?php echo __('Setup Environment Information'); ?>
+</h2>
+<div id="content" class="container">
+	<div class="row">
+		<p>
+			<span class="cnxlable"><b><?php echo __("Path name"); ?></b></span>
+			<span class="cnxvalue"><b><?php echo __("Config value"); ?></b></span>
+		</p>
+		<?php 
+			$configItems = $block->getConfigItems();
+			foreach( $configItems as $key => $value ) {
+		?>
+			<p>
+				<span class="cnxlable"><?php echo $key; ?></span>
+				<span class="cnxvalue"><?php echo $value; ?></span>
+			</p>
+		<?php
+			}
+		?>
+	</div>
+</div>
