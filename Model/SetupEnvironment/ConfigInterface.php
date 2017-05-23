@@ -8,12 +8,10 @@ use Magento\Framework\Exception\InvalidEmailOrPasswordException;
 use Magento\Framework\Exception\State\UserLockedException;
 interface ConfigInterface {
     /**
-     * Process customer authentication failure
+     * Loop throu $data object and save data to core_config_data table
      *
      * @param   DOMNodeList object $data
      * @return  array $result
      */
     public function save($data);
-
-
 }

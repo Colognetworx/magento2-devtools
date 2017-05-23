@@ -23,7 +23,7 @@ class SetupEnvironment extends Command {
     protected $_domDocument;
 
     /**
-     * @var \Cnx\Developer\Model\SetupEnvironment\Config
+     * @var \Cnx\Developer\Model\SetupEnvironment\ConfigInterface
      */
     protected $_config;
 

@@ -6,7 +6,15 @@
 
 	class SetupEnvironment extends \Magento\Framework\View\Element\Template {
 
+		/**
+		* @var Magento\Framework\App\Config\ScopeConfigInterface
+		*/
 		protected $_scopeConfig;
+
+		/**
+		* @var string default scopr for db entries
+		*/
+		protected $_scope = "default";
 		/**
 		* Constructor
 		*
@@ -15,8 +23,6 @@
 		* @param array $data
 		*/
 
-		protected $_scope = "default";
-
 		public function __construct(
 			Template\Context $context,
 			ScopeConfigInterface $scopeConfig,
@@ -24,13 +30,6 @@
 		) {
 			parent::__construct($context, $data);
 			$this->_scopeConfig = $scopeConfig;
-		}
-
-		/**
-		* @return string Headline for the backend view
-		*/
-		public function getToolHeadline() {
-			return __('Setup Environment Information');
 		}
 		
 		/**

@@ -9,7 +9,7 @@ use Magento\Framework\App\Config\Storage\WriterInterface;
 /**
  * Cnx developer model for config data
  */
-class Config {
+class Config implements ConfigInterface {
 
     /**
      * @var \Magento\Framework\App\Config\Storage\WriterInterface
