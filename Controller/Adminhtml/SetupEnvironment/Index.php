@@ -1,11 +1,15 @@
 <?php
+/**
+ * Copyright © Colognetworx cnx GmbH
+ * @author      Morshiba
+ */
 namespace Cnx\Developer\Controller\Adminhtml\SetupEnvironment;
 
 class Index extends \Magento\Backend\App\Action {
     /**
     * @var \Magento\Framework\View\Result\PageFactory
     */
-    protected $resultPageFactory;
+    protected $_resultPageFactory;
 
     /**
     * Constructor
@@ -17,13 +21,11 @@ class Index extends \Magento\Backend\App\Action {
         \Magento\Backend\App\Action\Context $context,
         \Magento\Framework\View\Result\PageFactory $resultPageFactory){
 		parent::__construct($context);
-		$this->resultPageFactory = $resultPageFactory;
+		$this->_resultPageFactory = $resultPageFactory;
     }
 
-
     public function execute() {
-        //echo "SetupEnvironment Index Controller loadeds"; OK
-		return  $resultPage = $this->resultPageFactory->create();
+		return  $resultPage = $this->_resultPageFactory->create();
     }
 
 }

@@ -1,7 +1,7 @@
 <?php
 /**
  * Copyright © Colognetworx cnx GmbH
- * @author      Sven Janßen
+ * @author      Morshiba
  */
 namespace Cnx\Developer\Console;
 
